@@ -12,6 +12,8 @@
 /[Uu]ser[Ss]ettings/
 *.log
 
+.DS_Store
+
 # Unity project is nested
 first_game_prototype/Library/
 first_game_prototype/Temp/
