@@ -75,7 +75,6 @@ public class DragShot : MonoBehaviour
         }
         delta = Input.mousePosition - lastMouse;
         lastMouse = Input.mousePosition;
-        cameraObject.localPosition = camAdjust;
     }
 
     private void StartDragging()
@@ -100,8 +99,7 @@ public class DragShot : MonoBehaviour
         // lineRenderer.SetPosition(0, startPos);
         // lineRenderer.SetPosition(1, endPos);
 
-        camAdjust.x -= delta.x * 0.01f;
-        camAdjust.y -= delta.y * 0.01f;
+        
 
         pullTimer += Time.deltaTime;
     }
